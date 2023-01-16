@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>WEBproject</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/">Главная страница</a></li>
+        <li><a href="/demand">Востребованность</a></li>
+        <li><a href="/geography" class="current">География</a></li>
+        <li><a href="/skills">Навыки</a></li>
+        <li><a href="/last_vacancies">Последние вакансии</a></li>
+    </ul>
+</nav>
+<header>
+    <img src="{% static 'img/logo.png' %}" class="logo">
+    <h1 class="title">Web-разработчик</h1>
+</header>
+<main>
+    <h2 class="page-title">География</h2>
+    <img src="{{ graph }}">
+    {% include table %}
+</main>
+<footer>
+    <p>Угренева Снежана Ильинична</p>
+    <p>РИ-210932</p>
+    <p>Еремина Ирина Вячеславовна</p>
+    <p>РИ-210912</p>
+</footer>
+</body>
+</html>

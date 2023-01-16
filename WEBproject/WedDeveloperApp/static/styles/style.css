@@ -1,0 +1,156 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    font-family: 'PT Sans Caption', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    background-color: #ae4ea8;
+    color: white;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: white;
+    bottom: -10px;
+}
+
+main{
+    flex-grow: 1;
+    width: 60%;
+    margin: 30px auto;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+footer::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background-color: white;
+    top: 0;
+}
+
+footer p{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 80px;
+    height: auto;
+}
+
+.title{
+    font-size: 38px;
+}
+
+.subtitle{
+    font-size: 44px;
+    text-align: center;
+}
+
+nav{
+    position: fixed;
+    width: 12%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a.current{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.page-title{
+    text-align: center;
+    font-size: 64px;
+}
+
+.skills-table .dataframe td, .skills-table .dataframe th{
+    padding: 0;
+}
+
+.dataframe{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.dataframe td, .dataframe th{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.vacancies-list{
+    margin-top: 80px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 0;
+}
+
+.vacancy{
+    box-sizing: border-box;
+    list-style: none;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.vacancy .name{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-underline-position: under;
+}
